@@ -1,0 +1,14 @@
+<h2>Selected Piece</h2>
+
+<div class="col-med-12">
+  
+  <li><a href="/artists/<%= @piece.artist.id %>"s><img class="piece-image" src="<%= @piece.image.url %>" width="650px" height="600px"></a></li>
+  <h3>
+  <ul>
+    <li class="blurb"><%= @piece.title %></li>
+    <li class="name"><i class="fa fa-user"></i> <%= @piece.artist.username %></li>
+  </ul>  
+  </h3>
+</div>
+
+

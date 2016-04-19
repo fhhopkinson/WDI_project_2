@@ -1,0 +1,19 @@
+<h2>Artists</h2>
+
+<ul>
+  <% @artists.each do |artist| %>
+  <li class="col-md-3">
+    <ul class="tile">  
+      <a href="/artists/<%= artist.id %>">
+        <% if artist.pieces.count > 0 && artist.pieces.first.image.url %>
+        <img src="<%= artist.profile_pic %>" class="piece-image" width="200" height="268">
+        <% else %> 
+        <img src="/images/default.png" class="piece-image" width="200" height="248">
+        <% end %>
+      </a> 
+      <h4><i class="fa fa-user"></i> <%= artist.username %></h4>     
+    </ul>
+  </li>
+  <% end %>
+</ul>
+

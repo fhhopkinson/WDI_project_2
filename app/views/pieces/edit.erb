@@ -1,0 +1,16 @@
+<h2>Edit Pieces</h2>
+<form id="register" method="post" action="/pieces/<%= @piece.id %>" enctype="multipart/form-data">
+ <div class="form-group">
+    <label for="piece">Piece Image</label>
+    <input name="piece[piece]" type="text" class="form-control" id="piece" placeholder="piece" value="<%= @piece.id %>">
+  </div>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input name="piece[piece]" type="text" class="form-control" id="piece" placeholder="piece" value="<%= @piece.id %>">
+  </div>
+  </form>
+  <form id="delete" method="post" action="/pieces/<%= @piece.id %>" enctype="multipart/form-data">
+
+  <button type="submit" class="btn btn-default"><a href="/pieces/:id/delete">Delete</a></button>
+
+  </form>

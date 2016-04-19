@@ -1,0 +1,35 @@
+<h2>Artist</h2>
+<div class="row artist">
+  <div class="col-md-12 col-md-offset-0">
+    <img src="<%= @artist.profile_pic %>" class="piece-image" id="profile_pic" width="200" height="268">
+    <address>
+      <h3 class="bio"><strong><i class="fa fa-user"></i>  <%= @artist.username %></strong>
+      </h3>
+      <a href="mailto:#" class="bio"><%= @artist.email %></a>
+    </address>
+    <p class="bio"><strong>Bio:</strong> <%= @artist.bio %> </p>
+  </div>
+  <div class="col-md-2 col-md-offset-4">
+    <form action="/pieces/new" method="get">
+        <input type="submit" class="btn btn-default" value="Add piece" name="Submit" />
+    </form>
+  </div>
+  <div class="col-md-2">
+    <form id="delete" method="post" action="/artists/<%= @artist.id %>">
+      <input type="hidden" name="_method" value="DELETE">
+      <button type="submit" class="btn btn-default">Delete Profile</button>
+    </form>
+  </div>
+</div>
+<div class="row artist">
+  <% @artist.pieces.each do |piece| %>
+    <div class="col-md-12">
+      <img src="<%= piece.image %>" class="piece-image" width="650" height="600">
+      <h4><%= piece.title %></h4>
+      <form id="delete" method="post" action="/artists/<%= @artist.id %>/pieces/<%= piece.id %>">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit" class="btn btn-default">Delete this piece</button>
+      </form>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,22 @@
+<h2>Gallery</h2>
+
+<ul>
+  <% @pieces.each do |piece| %>
+
+  <li class="col-md-6">
+   <ul class="tile">
+    <li><a href="pieces/<%= piece.id %>"><img src="<%= piece.image.url %>" class="piece-image" width="350" height="450"></a></li> 
+    
+    <li class="blurb" ><%= piece.title %></li>
+    <% if !piece.artist.nil? %>
+      <li class="name"><i class="fa fa-user"></i> <%= piece.artist.username %></li>
+    <% else %>
+      <li class="blurb">Anonymous</li>
+    <% end %>
+  </ul>
+ </li> 
+ <% end %>
+</ul>
+
+
+

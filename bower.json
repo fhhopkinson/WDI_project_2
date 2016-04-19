@@ -1,0 +1,21 @@
+{
+  "name": "sinatra-css-frameworks-and-bower",
+  "homepage": "https://github.com/generalassembly-ldn/curriculum-archived",
+  "authors": [
+    "alexpchin <alex@alexchin.co.uk>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
