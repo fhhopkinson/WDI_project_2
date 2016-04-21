@@ -6,43 +6,43 @@
 
   [
    {
-    username:
-    first_name:
-    last_name:
-    email:
-    bio:
-    image:
-    password_digest:
-    profile_pic:
+    username: "ppicasso" 
+    first_name: "Pablo" 
+    last_name: "Picasso"
+    email: "pablo@pablo.com"
+    bio: "The pioneer of cubism to post-impressionism so I thought I would use this site to show off"
+    image: ""
+    password_digest: "squirrel"
+    profile_pic: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pablo_picasso_1_(cuadrado).jpg"
   },
   {
-    username:
-    first_name:
-    last_name:
-    email:
-    bio:
-    image:
-    password_digest:
-    profile_pic:
+    username: "pmondrian"     
+    first_name: "Piet"
+    last_name: "Modrian"
+    email: "piet@piet.com"
+    bio: "I can't remember what I was supposed to be making but people think that it is good so I continue doing it"
+    image:""
+    password_digest: "squirrel"
+    profile_pic: "http://www.theartstory.org/images20/photo/mondrian_2.jpg"
     },
     {
-    username:
-    first_name:
-    last_name:
-    email:
-    bio:
-    image:
-    password_digest:
+    username: "hmatisse"
+    first_name: "Henri"
+    last_name: "Matisse"
+    email: henri@henri.com
+    bio: "I am competing with pablo for who is the best cubist and at the moment he is winning. That is why I am using this site."
+    image: ""
+    password_digest: "squirrel"
     profile_pic:
   },
   {
-   username:
-   first_name:
-   last_name:
-   email:
-   bio:
-   image:
-   password_digest:
+   username: "vtatlin"
+   first_name: "Vladimir"
+   last_name: "Tatlin"
+   email: "vlad@vlad.com"
+   bio: "I was one of Stalin's favourite artists which is why I made this cool sculpture that was going to be an exhibit at the Paris exhibition"
+   image: ""
+   password_digest: "squirrel"
    profile_pic:
   }
  ].each do |artist|
@@ -52,44 +52,43 @@ end
 [  
   {
    title:
-   image:
-   artist_id:
+   image: ""
+   artist_id:1
   },
   {
    title:
    image:
-   artist_id:
+   artist_id:1
   },
   {
    title:
    image:
-   artist_id:
-  }
-  ,
-  {
-   title:
-   image:
-   artist_id:
+   artist_id:1
   },
   {
    title:
    image:
-   artist_id:
+   artist_id:2
   },
   {
    title:
    image:
-   artist_id:
+   artist_id:2
   },
   {
    title:
    image:
-   artist_id:
+   artist_id:2
   },
   {
    title:
    image:
-   artist_id:
+   artist_id:3
+  },
+  {
+   title: "Art of the Russias"
+   image:
+   artist_id:3
   }
 
  ].each do |piece|

@@ -5,11 +5,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   #   "#{APP_ROOT}/public/uploads"
   # end
 
-  def store_dir
-    "uploads/#{model.id}"
-  end
+  # def store_dir
+  #   "uploads/#{model.id}"
+  # end
   
-  def cache_dir
-    "uploads/tmp/"
-  end
+  # def cache_dir
+  #   "uploads/tmp/"
+  # end
 end
