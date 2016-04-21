@@ -12,7 +12,7 @@ gem "sass"
 gem "sinatra-assetpack"
 gem "carrierwave"
 gem "bcrypt"
-
+gem "fog", "~> 1.0.0"
 
 group :development do
   gem 'tux', '~> 0.3.0'
